@@ -29,7 +29,7 @@
       <h2>Burgers to Eat</h2>
       {{#each burgers}}
       {{#unless this.notEaten}}
-      <li id="{this.burger_name}" class="list-group-item">
+      <li id="{{this.id}}" class="list-group-item">
         <div class="d-flex w-100 justify-content-between">
           <h4 class="mb-1">{{this.burger_name}}</h4>
           <button class="eat btn btn-info"
@@ -41,11 +41,11 @@
     </ul>
   </div>
   <div class="col-md-6">
-    <ul id="notEaten" class="list-group">
+    <ul id="eaten" class="list-group">
       <h2>Burgers to Eat</h2>
       {{#each burgers}}
-      {{#if this.notEaten}}
-      <li id="{this.burger_name}" class="list-group-item">
+      {{#if this.eaten}}
+      <li id="{this.id}" class="list-group-item">
         <div class="d-flex w-100 justify-content-between">
           <h4 class="mb-1">{{this.burger_name}}</h4>
         </div>
