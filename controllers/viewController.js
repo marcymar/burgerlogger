@@ -7,4 +7,4 @@ router.get('/', (req, res) => {
   })
 })
 
-moldule.exports = router
+module.exports = router
