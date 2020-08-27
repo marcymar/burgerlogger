@@ -16,7 +16,7 @@ orm.read = (table, cb) => {
   })
 }
 
-orm.update = (table, where, cb) => {
+orm.update = (table, updates, where, cb) => {
   db.query(`UPDATE ${table} SET ? WHERE ?`, [updates, where], err => {
     if (err) {console.log(err)}
     cb()

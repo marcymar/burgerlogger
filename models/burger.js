@@ -6,7 +6,7 @@ model.selectAll = (cb) => {
   orm.read('burgers', burgers => cb(burgers))
 }
 
-model.insertOne = (grocery, cb) => {
+model.insertOne = (burger, cb) => {
   orm.create('burgers', burger, id => cb(id))
 }
 

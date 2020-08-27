@@ -2,8 +2,7 @@ document.getElementById('newBurger').addEventListener('click', event => {
   event.preventDefault()
 
   axios.post('/api/burgers', {
-    burger_name: document.getElementById('burger').
-    value,
+    burger_name: document.getElementById('burger').value,
     devoured: false
   }).
     .then(({data}) => {
