@@ -4,7 +4,7 @@ document.getElementById('newBurger').addEventListener('click', event => {
   axios.post('/api/burgers', {
     burger_name: document.getElementById('burger').
     value,
-    notDevoured: false
+    devoured: false
   }).
     .then(({data}) => {
       let burgerElem = document.createElement('li')
