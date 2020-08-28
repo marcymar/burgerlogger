@@ -12,8 +12,7 @@ document.getElementById('newBurger').addEventListener('click', event => {
       burgerElem.innerHTML = `
         <div class="d-flex w-100 justify-content-between">
           <h4 class="mb-1">${document.getElementById('burger').value}</h4>
-          <button class="eat btn btn-info"
-          data-burger_name="${document.getElementById('burger').value}">Devour it!</button>
+          <button data-burger_name="${document.getElementById('burger').value}" class="eat btn btn-info">Devour it!</button>
         </div>
       `
       document.getElementById('notDevoured').append(burgerElem)
