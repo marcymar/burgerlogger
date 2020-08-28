@@ -1,6 +1,6 @@
 USE burger_db;
 
-INSERT INTO items (id, devoured)
+INSERT INTO burgers (burger_name, devoured)
 VALUES ('Bacon Cheeseburger', false),
 ('Cheeseburger', false),
 ('Burger', false);
