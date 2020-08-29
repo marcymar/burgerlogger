@@ -1,4 +1,4 @@
-document.getElementById('newBurger').addEventListener('click', event => {
+document.getElementById('addBurger').addEventListener('click', event => {
   event.preventDefault()
 
   axios.post('/api/burgers', {
