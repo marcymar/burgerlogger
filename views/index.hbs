@@ -16,7 +16,7 @@
       <li class="list-group-item">
         <div>
           <h3>{{this.burger_name}}</h3>
-          <button class = "btn btn-success">Add Burger</button>
+          <button type="submit" id="addBurger" class = "btn btn-success">Add Burger</button>
         </div>
       </li>
     </ul>
@@ -28,12 +28,12 @@
     <ul id="notDevoured" class="list-group">
       <h2>Burgers to Eat</h2>
       {{#each burgers}}
-      {{#unless this.notDevoured}}
+      {{#unless this.devoured}}
       <li id="{{this.id}}" class="list-group-item">
         <div class="d-flex w-100 justify-content-between">
           <h4 class="mb-1">{{this.burger_name}}</h4>
-          <button class="eat btn btn-info"
-          data-burger_name="{{this.burger_name}}">Devour it!</button>
+          <button 
+          data-burger_name="{{this.burger_name}}"class="eat btn btn-info">Devour it!</button>
         </div>
       </li>
       {{/unless}}
@@ -45,12 +45,12 @@
       <h2>Burgers Eaten</h2>
       {{#each burgers}}
       {{#if this.devoured}}
-      <li id="{this.id}" class="list-group-item">
+      <li id="{{this.id}}" class="list-group-item">
         <div class="d-flex w-100 justify-content-between">
           <h4 class="mb-1">{{this.burger_name}}</h4>
         </div>
       </li>
-      {{/unless}}
+      {{/if}}
       {{/each}}
     </ul>
   </div>

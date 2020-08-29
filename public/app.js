@@ -12,7 +12,8 @@ document.getElementById('newBurger').addEventListener('click', event => {
       burgerElem.innerHTML = `
         <div class="d-flex w-100 justify-content-between">
           <h4 class="mb-1">${document.getElementById('burger').value}</h4>
-          <button data-burger_name="${document.getElementById('burger').value}" class="eat btn btn-info">Devour it!</button>
+          <button 
+          data-burger_name="${document.getElementById('burger').value}"class="eat btn btn-info">Devour it!</button>
         </div>
       `
       document.getElementById('notDevoured').append(burgerElem)
@@ -31,8 +32,8 @@ document.addEventListener('click', event => {
       burgerElem.className = 'list-group-item'
       burgerElem.id= event.target.parentNode.parentNode.id 
       burgerElem.innertHTML = `
-          <div class="d-flex w-100 justify-content-between">
-            <h4 class="mb-1">${event.target.dataset.burger_name}</h4>
+        <div class="d-flex w-100 justify-content-between">
+          <h4 class="mb-1">${event.target.dataset.burger_name}</h4>
         </div>
       `
       document.getElementById('devoured').append(burgerElem)
