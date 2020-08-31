@@ -23,7 +23,7 @@ document.getElementById('addBurger').addEventListener('click', event => {
 })
 
 document.addEventListener('click', event => {
-  if (event.target.classList.contains('devoured')) {
+  if (event.target.classList.contains('eat')) {
     axios.put(`/api/burgers/${event.target.parentNode.parentNode.id}`, {
       devoured: true
     })
