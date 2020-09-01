@@ -1,28 +1,29 @@
 
-<div class="container">
+
   <div id="burgerSlide" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../public/assets/eatdaburger.jpg" class="d-block w-100" alt="eatdaburger">
+        <a><img src="../eatdaburger.jpg" class="d-block w-100" alt="eatdaburger"></a>
       </div>
     </div>
   </div>
-  <div class="form-group">
-    <label for="newBurger">Burger</label>
-    <input type="text" class="form-control" id="newBurger">
-  </div>
-  <div class="row">
-    <ul class="list-group">
-      <li class="list-group-item">
-        <div>
-          <h3>{{this.burger_name}}</h3>
-          <button type="submit" id="addBurger" class = "btn btn-success">Add Burger</button>
-        </div>
-      </li>
-    </ul>
-  </div>
+  <div class="container">
+    <div class="form-group">
+      <label for="newBurger">Burger</label>
+      <input type="text" class="form-control" id="newBurger">
+    </div>
+    <div class="row">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <div>
+            <h3>{{this.burger_name}}</h3>
+            <button type="submit" id="addBurger" class = "btn btn-success">Add Burger</button>
+          </div>
+        </li>
+      </ul>
+    </div>
 </div>
-<br>
+<hr>
 <div class="row">
   <div class="col-md-6">
     <ul id="notDevoured" class="list-group">
