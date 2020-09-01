@@ -17,7 +17,7 @@ document.getElementById('addBurger').addEventListener('click', event => {
         </div>
       `
       document.getElementById('notDevoured').append(burgerElem)
-      document.getElementById('burger').value = ''
+      document.getElementById('newBurger').value = ''
     })
     .catch(err => console.log(err))
 })
